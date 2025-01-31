@@ -2,6 +2,68 @@ body {
     background: linear-gradient(to right, black, rgb(53, 40, 40));
 }
 
+
+/* Estilo general de la navbar */
+.navbar {
+    background-color: #111 !important;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del logo */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #FFA500 !important;
+}
+
+/* Estilo de los enlaces */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important;
+    transform: scale(1.1);
+}
+
+/* Estilo del dropdown */
+.dropdown-menu {
+    background-color: #222;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: #fff !important;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #FFD700;
+    color: #111 !important;
+}
+
+/* Estilo del botón de toggler en móviles */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+
 .hero{
     background: url('/images/mariobros/MarioFondo.webp') no-repeat center center / cover; 
     padding: 280px
@@ -326,4 +388,15 @@ body {
     }
 
 
+}
+
+
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
 }

@@ -13,6 +13,6 @@ router.get('/fnaf', (req, res) => res.render('fnaf',{title:'Five Night At Freedy
 
 router.get('/mariobros', (req, res) => res.render('mariobros',{title:'Mario Bros'}));
 
-
+router.get('/it', (req, res) => res.render('it',{title:'Mario Bros'}));
 
 export default router; // exporta el router para ser utilizado en otros archivos
