@@ -1,0 +1,231 @@
+body {
+    background: linear-gradient(to right, black, rgb(53, 40, 40));
+}
+
+.hero{
+    background: url('/images/sonic3/sonic3Fondo.avif') no-repeat center center / cover; 
+    padding: 260px
+}
+
+
+
+
+.display-4{
+    font-weight: bold; 
+    color: black; 
+}
+
+.lead{
+    font-weight: bold; 
+    color:black
+}
+
+
+
+
+
+.container {
+    max-width: 1000px;
+    padding: 0px;
+}
+
+.container img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+
+
+h2 {
+    color:aliceblue;
+    font-size: 45px;
+    margin-bottom: 10px;
+    position: absolute; 
+    margin-left: 330px;
+    margin-top: 60px;
+}
+
+.Sinopsis{
+    color:blanchedalmond;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    position: absolute; 
+    margin-left: 330px;
+    margin-top: 130px;
+    max-width: 600px;
+}
+
+.Ver-Trailer {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    align-self: start;
+
+    margin-bottom: 10px;
+    position: absolute; 
+    margin-left: 40px;
+    margin-top: 230px;
+}
+
+
+@media (max-width: 900px) {
+    .hero{
+        background: url('/images/sonic3/sonic3Fondo.avif') no-repeat center center / cover; 
+        padding: 130px
+    }
+    
+    
+    
+    
+    .display-4{
+        font-weight: bold; 
+        color: black; 
+    }
+    
+    .lead{
+        font-weight: bold; 
+        color:black
+    }
+    
+    
+    
+    
+    
+    .container {
+        max-width: 1000px;
+        padding: 0px;
+    }
+    
+    .container img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    
+    
+    h2 {
+        color:aliceblue;
+        font-size: 45px;
+        margin-bottom: 10px;
+        position: absolute; 
+        margin-left: 330px;
+        margin-top: 60px;
+    }
+    
+    .Sinopsis{
+        color:blanchedalmond;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        position: absolute; 
+        margin-left: 330px;
+        margin-top: 130px;
+        max-width: 600px;
+    }
+    
+    .Ver-Trailer {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+        align-self: start;
+    
+        margin-bottom: 10px;
+        position: absolute; 
+        margin-left: 40px;
+        margin-top: 230px;
+    }
+    
+}
+
+@media (max-width: 450px){
+    .hero{
+        background: url('/images/sonic3/sonic3Fondo.avif') no-repeat center center / cover; 
+        padding: 50px
+    }
+    
+    
+    
+    
+    .display-4{
+        font-weight: bold; 
+        color: black; 
+        font-size: 20px;
+    }
+    
+    .lead{
+        font-weight: bold; 
+        color:black;
+        font-size: 10px;
+    }
+    
+    
+    
+    
+    
+    .container {
+        max-width: 350px;
+        padding: 0px;
+    }
+    
+    .container img {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
+        flex-shrink: 0;
+    }
+    
+    
+    
+    h2 {
+        color:aliceblue;
+        font-size: 25px;
+        margin-bottom: 10px;
+        position: absolute; 
+        margin-left: 150px;
+        margin-top: 10px;
+    }
+    
+    .Sinopsis{
+        color:blanchedalmond;
+        font-size: 10px;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        position: absolute; 
+        margin-left: 150px;
+        margin-top: 50px;
+        max-width: 210px;
+    }
+    
+    .Ver-Trailer {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 3px 6px;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+        align-self: start;
+    
+        margin-bottom: 10px;
+        position: absolute; 
+        margin-left: 20px;
+        margin-top: 150px;
+    }
+    
+}

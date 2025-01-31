@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/sonic3.css">
+    <title>Sonic 3</title>
+</head>
+<body>
+    
+    <%-include('partials/navbar') %>
+    
+    <%-include('partials/sonic3/header') %>
+    <br/>
+    <br/>
+    <div class="container">
+        <h2>Sinopsis: </h2>
+        <p class="Sinopsis">Sonic, Knuckles y Tails se enfrentan a un nuevo enemigo: Shadow, un erizo que llegó del espacio y fue hecho prisionero por el Ejército. Cincuenta años después de su captura, Shadow escapa del encierro con la intención de vengarse de la humanidad.</p>
+        <img src="/images/sonic3/SonicPoster.jpeg"></img>
+        <a href="https://www.youtube.com/watch?v=bjxCH2fX4QU">
+            <button class="Ver-Trailer">Ver Trailer</button>
+        </a>
+    </div>
+    <%-include('partials/sonic3/carrusel') %>
+    
+    
+</body>
+</html>
