@@ -2,9 +2,70 @@ body {
     background: linear-gradient(to right, black, rgb(53, 40, 40));
 }
 
+/* Estilo general de la navbar */
+.navbar {
+    background-color: #111 !important;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo del logo */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700 !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #FFA500 !important;
+}
+
+/* Estilo de los enlaces */
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important;
+    transform: scale(1.1);
+}
+
+/* Estilo del dropdown */
+.dropdown-menu {
+    background-color: #222;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-item {
+    color: #fff !important;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #FFD700;
+    color: #111 !important;
+}
+
+/* Estilo del botón de toggler en móviles */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+
 .hero{
-    background: url('/images/sonic3/sonic3Fondo.avif') no-repeat center center / cover; 
-    padding: 260px
+    background: url('/images/cineFondo.jpg') no-repeat center center / cover; 
+    padding: 180px
 }
 
 
@@ -12,317 +73,280 @@ body {
 
 .display-4{
     font-weight: bold; 
-    font-size: 70px;
-    color: rgb(255, 255, 255);
-    -webkit-text-stroke: 4px #000000; 
+    font-size: 50px;
+    color: rgb(251, 255, 0);
+    -webkit-text-stroke: 3px #000000; 
 }
 
 .lead{
     font-weight: bold; 
-    color: rgb(255, 255, 255);
-    font-size: 30px;
+    color: rgb(14, 59, 206);
+    font-size: 25px;
     -webkit-text-stroke: 2px #000000;
 }
 
 
-
-
-
-.container {
-    max-width: 1000px;
-    padding: 0px;
-}
-
-.container img {
+/* Contenedor principal */
+.peliculas {
+    padding: 20px;
+    background: transparent;
+    max-width: 1400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  /* Título */
+  .peliculas h1 {
+    font-weight: bold;
+    border-bottom: 3px solid #ffe600;
+    color: #daebf7;
+    display: inline-block;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 35px;
+  }
+  
+  /* Grid de certificados */
+  .peli-grid {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  /* Item de certificado */
+  .peli-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+  }
+  
+  .peli-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Imagen del certificado */
+  .peli-item img {
     width: 100%;
     max-width: 300px;
-    height: auto;
-    flex-shrink: 0;
-}
-
-
-.container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-}
-
-.container h2 {
-    color:aliceblue;
-    font-size: 45px;
-    margin-bottom: 10px;
-    position: absolute; 
-    margin-left: 330px;
-    margin-top: 60px;
-}
-
-.Sinopsis{
-    color:blanchedalmond;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-    position: absolute; 
-    margin-left: 330px;
-    margin-top: 130px;
-    max-width: 600px;
-}
-
-.Ver-Trailer {
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+    height: 320px;
+    width: 200px;
+    object-fit: cover;
     border-radius: 5px;
-    transition: background 0.3s;
-    align-self: start;
+  }
+  
+  .peli-item span {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
 
-    margin-bottom: 10px;
-    position: absolute; 
-    margin-left: 40px;
-    margin-top: 230px;
-}
-
-.Ver-Trailer:hover {
-    background-color: #cc0000;
-    transform: scale(1.1);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-
-/* Carrusel */
-
-.carrusel-titulo {
-    color:aliceblue;
-    font-size: 35px;
-    margin-bottom: 10px;
-    position: absolute; 
-    margin-left: 160px;
-    margin-top: -60px;
-}
-
-/* Estilos para el carrusel responsivo */
-#carouselExampleAutoplaying {
-    max-width: 700px; /* Reduce el tamaño del carrusel */
-    margin: auto; /* Centrarlo en la página */
-}
-
-.carousel-inner img {
-    width: 100%; /* Ajusta las imágenes al contenedor */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-}
 
 
 @media (max-width: 900px) {
     .hero{
-        background: url('/images/sonic3/sonic3Fondo.avif') no-repeat center center / cover; 
-        padding: 130px
+        background: url('/images/cineFondo.jpg') no-repeat center center / cover; 
+        padding: 100px
     }
-    
-    
-    
-    
     .display-4{
         font-weight: bold; 
-        color: rgb(255, 255, 255);
+        color: rgb(238, 255, 0);
         font-size: 40px;
         -webkit-text-stroke: 2px #000000; 
     }
     
     .lead{
         font-weight: bold; 
-        color: rgb(255, 255, 255);
+        color: rgb(46, 49, 199);
         font-size: 20px;
         -webkit-text-stroke: 1px #000000;
     }
+
+    /* Contenedor principal */
+    .peliculas {
+        padding: 20px;
+        background: transparent;
+        max-width: 800px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+      /* Título */
+    .peliculas h1 {
+    font-weight: bold;
+    border-bottom: 3px solid #ffee00;
+    color: #daebf7;
+    display: inline-block;
+    padding-bottom: 10px;
+    display: absolute;
+    margin-left: 20px;
+    font-size: 1.8rem;
     
-    
-    
-    
-    
-    .container {
-        max-width: 650px;
-        padding: 0px;
     }
     
-    .container img {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        flex-shrink: 0;
+    .peli-item img{
+        height: 280px;
+        width: 180px;
+        
     }
-    
-    
-    
-    .container h2 {
-        color:aliceblue;
-        font-size: 45px;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 330px;
+
+    .peli-item span {
         margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.6rem;
+        color: rgb(255, 255, 255);
     }
-    
-    .Sinopsis{
-        color:blanchedalmond;
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 330px;
-        margin-top: 70px;
-        max-width: 320px;
-    }
-    
-    .Ver-Trailer {
-        background-color: #ff0000;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background 0.3s;
-        align-self: start;
-    
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 30px;
-        margin-top: 230px;
-    }
-    
-
-
-
-    .carrusel-titulo {
-        color:aliceblue;
-        font-size: 30px;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 70px;
-        margin-top: -60px;
-    }
-    
-    /* Estilos para el carrusel responsivo */
-    #carouselExampleAutoplaying {
-        max-width: 600px; /* Reduce el tamaño del carrusel */
-        margin: auto; /* Centrarlo en la página */
-    }
-    
-    .carousel-inner img {
-        width: 100%; /* Ajusta las imágenes al contenedor */
-        height: auto; /* Mantiene la proporción */
-        border-radius: 10px; /* Bordes redondeados opcionales */
-    }
-
-
-
-
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 768px) {
+
     .hero{
-        background: url('/images/sonic3/sonic3Fondo.avif') no-repeat center center / cover; 
-        padding: 50px
+        background: url('/images/cineFondo.jpg') no-repeat center center / cover; 
+        padding: 30px
     }
-    
-    
-    
-    
     .display-4{
         font-weight: bold; 
-        font-size: 28px;
-        color: rgb(255, 255, 255);
-        -webkit-text-stroke: 1.5px #000000; 
+        color: rgb(251, 255, 0);
+        font-size: 30px;
+        -webkit-text-stroke: 2px #000000; 
     }
     
     .lead{
         font-weight: bold; 
+        color: rgb(50, 41, 179);
         font-size: 15px;
-        color: rgb(255, 255, 255);
         -webkit-text-stroke: 1px #000000;
     }
+
+    /* Contenedor principal */
+    .peliculas {
+        padding: 20px;
+        background: transparent;
+        max-width: 600px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .peli-grid {
     
-    
-    
-    
-    
-    .container {
-        max-width: 350px;
-        padding: 0px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 10px;
+        justify-items: center;
+    }
+
+    /* Título */
+    .peliculas h1 {
+        font-weight: bold;
+        border-bottom: 3px solid #ffee00;
+        color: #daebf7;
+        display: inline-block;
+        padding-bottom: 10px;
+        display: absolute;
+        margin-left: 15px;
+        font-size: 1.5rem;
     }
     
-    .container img {
-        width: 100%;
-        max-width: 130px;
-        height: auto;
-        flex-shrink: 0;
+    .peli-item img{
+        height: 200px;
+        width: 150px;
+        
     }
     
-    
-    
-    .container h2 {
-        color:aliceblue;
-        font-size: 25px;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 150px;
-        margin-top: 0px;
+    .peli-item span {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+    }
+
+}
+
+
+
+
+@media (max-width: 450px){
+    .hero{
+        background: url('/images/cineFondo.jpg') no-repeat center center / cover; 
+        padding: 0.3px
+    }
+    .display-4{
+        font-weight: bold; 
+        font-size: 20px;
+        color: rgb(255, 238, 0);
+        -webkit-text-stroke: 1px #000000; 
     }
     
-    .Sinopsis{
-        color:blanchedalmond;
+    .lead{
+        font-weight: bold; 
         font-size: 10px;
-        line-height: 1.5;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 150px;
-        margin-top: 40px;
-        max-width: 200px;
-    }
-    
-    .Ver-Trailer {
-        background-color: #ff0000;
-        color: white;
-        border: none;
-        padding: 3px 6px;
-        font-size: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background 0.3s;
-        align-self: start;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 20px;
-        margin-top: 140px;
-    }
-    
-
-
-
-    .carrusel-titulo {
-        color:aliceblue;
-        font-size: 18px;
-        margin-bottom: 10px;
-        position: absolute; 
-        margin-left: 20px;
-        margin-top: -50px;
-    }
-    
-    /* Estilos para el carrusel responsivo */
-    #carouselExampleAutoplaying {
-        max-width: 280px; /* Reduce el tamaño del carrusel */
-        margin: auto; /* Centrarlo en la página */
-    }
-    
-    .carousel-inner img {
-        width: 100%; /* Ajusta las imágenes al contenedor */
-        height: auto; /* Mantiene la proporción */
-        border-radius: 10px; /* Bordes redondeados opcionales */
+        color: rgb(54, 76, 196);
+        -webkit-text-stroke: 0.4px #000000;
+        max-width: 170px;
     }
 
+
+    .peliculas {
+        padding: 10px;
+        background: transparent;
+        max-width: 1200px;
+        margin: auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    
+      /* Título */
+    .peliculas h1 {
+        font-weight: bold;
+        border-bottom: 3px solid #ffee00;
+        color: #ffffff;
+        display: inline-block;
+        padding-bottom: 10px;
+        display: absolute;
+        margin-left: 6px;
+        font-size: 1.1rem;
+        
+    }
+
+    .peli-grid {
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+        padding: 10px;
+        justify-items: center;
+    }
+
+
+    .peli-item img{
+        height: 180px;
+        width: 120px;
+    }
+
+    .peli-item span {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 0.9rem;
+        color: rgb(255, 255, 255);
+    }
 
 }
